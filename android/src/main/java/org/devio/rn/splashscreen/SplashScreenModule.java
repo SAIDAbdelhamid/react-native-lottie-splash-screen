@@ -21,6 +21,11 @@ public class SplashScreenModule extends ReactContextBaseJavaModule {
   public String getName() {
     return "SplashScreen";
   }
+  
+  @Override
+  public boolean canOverrideExistingModule() {        
+    return true;    
+  }
 
   /**
    * 关闭启动屏
